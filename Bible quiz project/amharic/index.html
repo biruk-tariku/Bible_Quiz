@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>የመጽሐፍ ቅዱስ ጥያቄዎች</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" type="img" href="/bible.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+    <class= class="container">
+        <div class="container-header">
+            <h1><span>የመጽሐፍ</span> ቅዱስ ጥያቄዎች</h1>
+        </div>
+
+        <div class="content" id="question_header">
+            <p> እንኳን ደህና መ እባኮትን የሚከተለውን መረጃ ይሙሉ</p>
+            <ol>
+                <li> ሙሉ ስም</li>
+                <li> ጾታ</li>
+                <li> ዕድሜ</li>
+                <li> ዜግነት</li>
+            </ol>
+
+        </div>
+
+        <button id="myBtn" class="btn">መረጃ ያስገቡ >></button>
+        </div>
+
+        <div id="myModal" class="modal">
+            <div class="modal-contents">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2>መረጃ ያስገቡ</h2>
+                </div>
+
+                <div class="modal-body">
+                    <form>
+                        <div id="form_div">
+                            <div id="form_left">
+                                ሙሉ ስም <br>
+                                ጾታ <br>
+                                ዕድሜ <br>
+                                ዜግነት <br>
+                            </div>
+
+                            <div id="form_right">
+                                <input type="text" id="name" placeholder="full-name .
+                            .." required>
+                                <select id="gender">gender
+                                    <option value=""></option>
+                                    <option value="male">male</option>
+                                    <option value="female">female</option>
+                                </select>
+                                <div class="slide_container">
+                                    <input type="range" id="age" min="6" max="" value="18" class="slider" required>
+                                    <span id="ageRange"></span>
+                                </div>
+
+                                <input type="text" id="nationality" placeholder="nationality
+                            .. " required>
+                            </div>
+
+
+                            <button class="btn" onclick="sendStudentinfo(event)">መረጃ ያስገቡ </button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="modal-footer">
+                    <p>እንኳን ደህና መ እባኮትን የሚከተለውን መረጃ ይሙሉ</p>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+</body>
+
+</html>

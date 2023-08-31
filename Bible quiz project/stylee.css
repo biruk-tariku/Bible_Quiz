@@ -1,0 +1,67 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(css/3.jpg) no-repeat center center fixed;
+    background-size: cover;
+
+    animation-name: animate;
+    animation-direction:alternate-reverse;
+    animation-duration: 50s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+}
+@keyframes animate{
+    0%{
+        background-image: url(css/7.jpg);
+    }20%{
+        background-image: url(css/scroll.jpg);
+    }40%{
+        background-image: url(css/6.jpg);
+    }60%{
+        background-image: url(css/4.jpg);
+    }80%{
+        background-image: url(css/3.jpg);
+    }100%{
+        background-image: url(css/8.jpg);
+    }
+}
+
+.select_language {
+    text-align: center;
+    margin-top: 300px;
+    margin-bottom: 250px;
+}
+.lang{
+    color:rgb(255, 255, 254);
+    text-shadow: rgba(5, 5, 5,10);
+    font-weight: bolder;
+}
+
+.lang-btn{
+    display: inline-block;
+    padding: 11px 26px;
+    background: rgb(63, 130, 0);
+    color: hsl(61, 94%, 49%);
+    /* border: 2px solid var(--main-color); */
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 600;
+    transition: all .50s ease; 
+}
+.lang-btn:hover{
+    background: transparent;
+    color: white;
+    box-shadow: 0 0 20px var(--maisn-color);
+}
+.lang-btn:hover{
+    background: var(--main-color);
+    color: white;
+}
+
+@media (max-width:768px) {
+    body {
+        background-size: 900px;
+    }
+}

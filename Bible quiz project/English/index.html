@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bible Questions</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" type="img" href="/bible.jpg">
+</head>
+
+<body>
+    <class= class="container">
+        <div class="container-header">
+            <h1><span>Bible</span> Quiz</h1>
+        </div>
+
+        <div class="content" id="question_header">
+            <p> Well-come please fill the following information</p>
+            <ol>
+                <li> Full name</li>
+                <li> Gender</li>
+                <li> age</li>
+                <li> Nationality</li>
+            </ol>
+
+        </div>
+
+        <button id="myBtn" class="btn">Enter info >></button>
+        </div>
+
+        <div id="myModal" class="modal">
+            <div class="modal-contents">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2>Enter information</h2>
+                </div>
+
+                <div class="modal-body">
+                    <form>
+                        <div id="form_div">
+                            <div id="form_left">
+                                full name <br>
+                                Gender <br>
+                                age <br>
+                                Nationality <br>
+                            </div>
+
+                            <div id="form_right">
+                                <input type="text" id="name" placeholder="full-name .
+                            ..">
+                                <select id="gender">gender
+                                    <option value=""></option>
+                                    <option value="male">male</option>
+                                    <option value="female">female</option>
+                                </select>
+                                <div class="slide_container">
+                                    <input type="range" id="age" min="6" max="" value="18" class="slider">
+                                    <span id="ageRange"></span>
+                                </div>
+
+                                <input type="text" id="nationality" placeholder="nationality
+                            ..">
+                            </div>
+
+
+                            <button class="btn" onclick="sendStudentinfo(event)">Enter info</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="modal-footer">
+                    <p>Well-come please enter your full information includeing </p>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+</body>
+
+</html>
